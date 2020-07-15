@@ -9,4 +9,3 @@ then
 else
         echo "it's not valid"
 fi
-
