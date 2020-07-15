@@ -1,11 +1,11 @@
 #!/bin/bash -x
 shopt -s extglob
-read -p "Enter your name :" string
+read -p "Enter your last name :" string
 echo $string
 pat='^[A-Z]{1}[a-zA-Z]{2,}$'
 if [[ $string =~ $pat ]]
 then
-        echo "$string is a valid First Name"
+        echo "$string is a valid Last Name"
 else
         echo "it's not valid"
 fi
