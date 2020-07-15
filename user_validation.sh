@@ -5,7 +5,7 @@ echo $passwd
 var='[A-Z]{1,}'
 if [[ $passwd =~ $var ]]
 then
-        echo "$passwd is a valid Password"
+        echo "$string is a valid Pass word"
 else
         echo "it's not valid"
 fi
