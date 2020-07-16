@@ -1,6 +1,6 @@
 #!/bin/bash -x
 shopt -s extglob
-read -p "Enter your name :" string
+read -p "Enter your First name :" string
 echo $string
 pat='^[[:upper:]]{1}[[:lower:]]{2,}$'
 if [[ $string =~ $pat ]]
