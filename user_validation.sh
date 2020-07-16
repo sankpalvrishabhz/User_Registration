@@ -1,11 +1,11 @@
 #!/bin/bash -x
 shopt -s extglob
-read -p "Enter your password:" passwd
-echo $passwd
-pat1='^[a-zA-Z0-9]{8,}[\.\*\+\?\$\^\/\\\!\@\#\%\&\*]{1}$'
-if [[ $passwd =~ $pat1 ]]
+read -p "Enter your First name :" string
+echo $string
+pat='^[[:upper:]]{1}[[:lower:]]{2,}$'
+if [[ $string =~ $pat ]]
 then
-        echo "$passwd is a valid Pass word"
+        echo "$string is a valid First name"
 else
         echo "it's not valid"
 fi
