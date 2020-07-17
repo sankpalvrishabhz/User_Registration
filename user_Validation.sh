@@ -2,10 +2,10 @@
 shopt -s extglob
 read -p "Enter your password:" passwd
 echo $passwd
-var='^[a-zA-Z]{8,}$'
+var='[[:upper:]]{1,}'
 if [[ $passwd =~ $var ]]
 then
-        echo "$passwd is a valid Password"
+        echo "$passwd is a valid Pass word"
 else
         echo "it's not valid"
 fi
